@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "Zilla Slab";
+  src:url("")
+}
+
+
+.text-center {
+  text-align: center;
+  color: #C1E1DC;
+  text-decoration: none;
+}
+h1 {
+  font-family: 'Zilla Slab', serif;
+  font-size: 5vw;
+  margin: 1w;
+}
+body {
+  overflow: scroll;
+}
+#test_status {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-size: 2vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.questions {
+  margin-left: 28%;
+  width: 50%;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 1vw;
+  margin-bottom: 0;
+  font-size: 2vw;
+}
+
+.button {
+  text-align: center;
+}
+
+#btn {
+  border: #FDD475 2px solid;
+  background-color: white;
+  color: #FDD475;
+  cursor:pointer;
+  font-size: 2vw;
+  text-align: center;
+  padding: 1vw 4vw;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#btn:hover {
+  background-color: #FDD475;
+  color: white;
+}
+
+#print_results {
+  text-align: center;
+  font-family: "Zilla Slab";
+  font-size: 2vw;
+  margin-bottom: 0vw;
+}
+
+#results_paragraph {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 1vw;
+  overflow: auto;
+}
+
+#results_articles {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 4vw;
+  color: blue;
+  overflow: auto;
+}
+
+#results_podcasts {
+  font-weight: 400;
+  font-size: 2vw;
+  margin-top: 1vw;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  color: blue;
+  overflow: auto;
+}
+
+#nextButton {
+  visibility: hidden;
+  border: #FFCCAC 2px solid;
+  background-color: white;
+  color: #FFCCAC;
+  font-size: 2vw;
+  text-align: center;
+  cursor:pointer;
+  /*margin-top: 2.5vw;*/
+  padding: 1vw 4vw;
+  margin-left: 60%;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 0;
+  margin-bottom: 10%;
+}
+
+#nextButton:hover {
+  background-color: #FFCCAC;
+  color: white;
+}
+
+#results_paragraph {
+  max-width: 70%;
+  text-align: center;
+  margin:auto;
+}
+
+.results {
+  background-color: #FFEB94;
+  text-align: center;
+}
+
+.results .resources {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  overflow: auto;
+}
+.container {
+  overflow: auto;
+  height:100%;
+  width:auto;
+}
+
+#print_results {
+  font-size: 6vw;
+  background-color: #FFEB94;
+  padding-top: 2vw;
+  margin-bottom: 0;
+}
+
+#results_paragraph {
+  background-color: #FFEB94;
+  margin-left: 12vw;
+  overflow: auto;
+  margin: 2vw;
+}
+
+#hehe {
+  background-color: #C1E1DC;
+  font-size: 4vw;
+  /*overflow: auto;*/
+  margin-left: 1vw;
+  margin-right: 1vw;
+
+}
+.navbar button{
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 0vw;
+    width: 11vw;
+    max-height: 40;
+    float: none;
+    height: auto;
+    font-size: 5vw;
+}
+a {
+  color: black;
+}
+i:hover{
+    color: #C1E1DC;
+}
