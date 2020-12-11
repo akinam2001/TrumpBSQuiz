@@ -38,7 +38,7 @@ body {
   text-align: center;
 }
 
-#btn {
+.btn {
   border: #FDD475 2px solid;
   background-color: white;
   color: #FDD475;
@@ -49,7 +49,7 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
-#btn:hover {
+.btn:hover {
   background-color: #FDD475;
   color: white;
 }
@@ -167,4 +167,8 @@ a {
 }
 i:hover{
     color: #C1E1DC;
+}
+
+#nextQ{
+  visibility: hidden;
 }
