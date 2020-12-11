@@ -1,21 +1,12 @@
 function startQuiz() {
-    document.getElementById('btn').style.visibility = "hidden";
+    document.getElementById('start').style.visibility = "hidden";
     // var x = false;
     // return x;
     return displayQuestion();
 }
 
-function nextQuestion() {
-  // var x = true;
-  // return true;
-  // if true {
-    document.getElementById('nextButton').style.visibility = "visible";
-  // }
-  // else {
-  //   document.getElementById('nextButton').style.visibility = "hidden";
-  // }
-}
-
+var next = document.getElementById('nextQ');
+var check = document.getElementById('nextButton');
 var pos = 0, test, test_staus, question, option, options, opA, opB, opC, opD, score = 0;
 var questions = [
     [" My day starts with:", " a complete breakfast during my long morning commute.", " reviewing and adding things to my planner and making a to-do list for the day.", " waking up late and finishing homework or other work due that day.", " exercise or meditation.", "A", "B", "C", "D"],
@@ -30,6 +21,19 @@ var questions = [
     [" I can maintain focus on one task for a significant period of time.", " Rarely", " Very often", " Not at all", " Sometimes", "A", "B", "C", "D"],
 ];
 
+var answers = [
+  ["answer explanation 1"],
+  ["answer explanation 2"],
+  ["answer explanation 3"],
+  ["answer explanation 4"],
+  ["answer explanation 5"],
+  ["answer explanation 6"],
+  ["answer explanation 7"],
+  ["answer explanation 8"],
+  ["answer explanation 9"],
+  ["answer explanation 10"],
+]
+
 
 function $(arg) {
     return document.getElementById(arg);
@@ -37,13 +41,17 @@ function $(arg) {
 
 function displayQuestion() {
     test = $("test");
+
+    // check if quiz has been started
     if (pos < 0) {
         document.getElementById('nextButton').style.visibility = "hidden";
       }
     else {
       document.getElementById('nextButton').style.visibility = "visible";
+      document.getElementById('nextQ').style.visibility = "hidden";
     }
 
+    // display results depending on score after all questions are answered
     if (pos >= questions.length) {
         document.getElementById('nextButton').style.visibility = "hidden";
         if (score <= 15) {
@@ -112,11 +120,13 @@ function displayQuestion() {
           articles.innerHTML = "Articles: "
           document.getElementById("results_articles").innerHTML = article1_result;
         }
+        // reset the quiz vars
         pos = 0;
         score = 0;
         return false
     }
 
+    document.getElementById("correctAnswer").innerHTML = "";
     $("test_status").innerHTML = "Question " + (pos + 1) + " of " + questions.length;
     question = questions[pos][0];
     opA = questions[pos][1];
@@ -132,7 +142,10 @@ function displayQuestion() {
 }
 
 function checkAnswer() {
+    document.getElementById('nextButton').style.visibility = "hidden";
     options = document.getElementsByName("options");
+    var correctAnswer = document.getElementById("correctAnswer");
+
     for (var i = 0; i < options.length; i++) {
         if (options[i].checked) {
             option = [options[i].value, i];
@@ -150,9 +163,19 @@ function checkAnswer() {
     else {
         score = score + 2;
     }
-    pos++;
-    displayQuestion();
+
+    correctAnswer.innerHTML = answers[pos];
+    pos++; // next question
+
+    // handle the next question
+    var next =  document.getElementById('nextQ');
+    next.style.visibility = "visible";
+    next.addEventListener("click", ()=>{
+      topFunction();
+      displayQuestion(); // display next question
+    })
 }
+
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
