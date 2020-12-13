@@ -68,24 +68,6 @@ body {
   overflow: auto;
 }
 
-#results_articles {
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 4vw;
-  color: blue;
-  overflow: auto;
-}
-
-#results_podcasts {
-  font-weight: 400;
-  font-size: 2vw;
-  margin-top: 1vw;
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  color: blue;
-  overflow: auto;
-}
-
 #nextButton {
   visibility: hidden;
   border: #FFCCAC 2px solid;
@@ -171,4 +153,8 @@ i:hover{
 
 #nextQ{
   visibility: hidden;
+}
+
+#correctAnswer{
+  color: #93cee0;
 }
