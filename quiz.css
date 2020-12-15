@@ -6,32 +6,39 @@
 
 .text-center {
   text-align: center;
-  color: #C1E1DC;
+  color: #ffffff;
   text-decoration: none;
 }
 h1 {
-  font-family: 'Zilla Slab', serif;
   font-size: 5vw;
   margin: 1w;
+  font-weight: lighter;
 }
 body {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
   overflow: scroll;
+  background: #ccceb3;
 }
 #test_status {
-  font-family: 'Quicksand', sans-serif;
   text-align: center;
   font-size: 2vw;
   margin-left: 1vw;
   margin-right: 1vw;
+  font-weight: lighter;
+
+}
+
+#test{
+  font-weight: lighter;
 }
 
 .questions {
-  margin-left: 28%;
+  margin-left: 26%;
   width: 50%;
-  font-family: 'Quicksand', sans-serif;
   margin-top: 1vw;
   margin-bottom: 0;
   font-size: 2vw;
+  font-weight: lighter;
 }
 
 .button {
@@ -39,53 +46,52 @@ body {
 }
 
 .btn {
-  border: #FDD475 2px solid;
-  background-color: white;
-  color: #FDD475;
+  border: #bdbbbb 2px solid;
+  background-color: #bdbbbb;
+  border-radius: 5px;
+  color: #ffffff;
   cursor:pointer;
   font-size: 2vw;
   text-align: center;
   padding: 1vw 4vw;
-  font-family: 'Quicksand', sans-serif;
+  font-weight: lighter;
 }
 
 .btn:hover {
-  background-color: #FDD475;
+  background-color: #bdbbbb;
   color: white;
 }
 
 #print_results {
   text-align: center;
-  font-family: "Zilla Slab";
   font-size: 2vw;
   margin-bottom: 0vw;
 }
 
 #results_paragraph {
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
   margin-top: 1vw;
   overflow: auto;
 }
 
 #nextButton {
   visibility: hidden;
-  border: #FFCCAC 2px solid;
-  background-color: white;
-  color: #FFCCAC;
+  border: #bdbbbb 2px solid;
+  background-color: #bdbbbb;
+  color: #ffffff;
   font-size: 2vw;
   text-align: center;
   cursor:pointer;
   /*margin-top: 2.5vw;*/
   padding: 1vw 4vw;
   margin-left: 60%;
-  font-family: 'Quicksand', sans-serif;
   margin-top: 0;
   margin-bottom: 10%;
+  font-weight: lighter;
 }
 
 #nextButton:hover {
-  background-color: #FFCCAC;
+  background-color: #bdbbbb;
   color: white;
 }
 
@@ -102,7 +108,6 @@ body {
 
 .results .resources {
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
   overflow: auto;
 }
 .container {
@@ -156,5 +161,13 @@ i:hover{
 }
 
 #correctAnswer{
-  color: #93cee0;
+  color: #000000;
+}
+
+p{
+  display: inline;
+}
+
+q{
+  background-color: #ffffff;
 }
